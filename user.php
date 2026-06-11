@@ -1,13 +1,10 @@
-<?php
-    include "koneksi.php";
-?>
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Project UAS</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -53,7 +50,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="../gallery.html" class="nav-link">
+            <a href="index.php" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -70,49 +67,37 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="data.php" class="nav-link">
+                <a href="user.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data User</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="data.php" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Personil</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="data.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Barang</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-header">TRANSAKSI</li>
           <li class="nav-item">
-            <a href="../calendar.html" class="nav-link">
+            <a href="index.php" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Calendar
+                Penjualan
                 <span class="badge badge-info right">2</span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../gallery.html" class="nav-link">
+            <a href="index.php" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Gallery
+                Pembelian
               </p>
             </a>
           </li>
 
           <li class="nav-header">LAPORAN</li>
           <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.0" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
+              <p>Laporan Penjualan</p>
             </a>
           </li>
         </ul>
@@ -151,108 +136,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
-                </tr>
-                </thead>
-                <tbody>
-          <?php 
-          $query = mysqli_query($conn,"SELECT id_user,tb_personil.nama_personil,username,password,level,status_user 
-                    FROM tb_user,tb_personil
-                    WHERE tb_user.id_personil=tb_personil.id_personil");
-          while ($data = mysqli_fetch_assoc($query)) 
-          {
-          ?>
-            <tr>
-              <td><?php echo $data['id_user']; ?></td>
-              <td><?php echo $data['nama_personil']; ?></td>
-              <td><?php echo $data['username']; ?></td>
-              <td><?php echo $data['password']; ?></td>
-              <td><?php echo $data['level']; ?></td>
-              
-                <?php 
-                  if ($data['status_user']==1){
-                    echo "<td>Aktif</td>";
-                  }else{
-                    echo "<td>Tidak Aktif</td>";
-                  }
-                ?>
-              
-              <td>
-                <a href="#" type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal<?php echo $data['id_user']; ?>">Edit</a>
-              </td>
-            </tr>
-            <!-- Modal Edit User-->
-            <div class="modal fade" id="myModal<?php echo $data['id_user']; ?>" role="dialog">
-              <div class="modal-dialog">
-              
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Update Data User</h4>
-                  </div>
-                  <div class="modal-body">
-                    <form role="form" action="action/ubah.php" method="post">
-
-                        <?php
-                          $id = $data['id_user']; 
-                          $query_edit = mysqli_query($conn,"SELECT tb_user.*, tb_personil.nama_personil FROM tb_user, tb_personil WHERE tb_user.id_personil=tb_personil.id_personil AND tb_user.id_user='$id'");
-                          while ($row = mysqli_fetch_array($query_edit)) {  
-                        ?>
-
-                        <input type="hidden" name="id_user" value="<?php echo $row['id_user']; ?>">
-
-                        <div class="form-group">
-                          <label>Nama Personil</label>
-                          <input type="text" name="nama_personil" class="form-control" value="<?php echo $row['nama_personil']; ?>" disabled>      
-                        </div>
-
-                        <div class="form-group">
-                          <label>Username</label>
-                          <input type="text" name="username" class="form-control" value="<?php echo $row['username']; ?>">      
-                        </div>
-
-                        <div class="form-group">
-                          <label>Password</label>
-                          <input type="password" name="password" class="form-control" value="<?php echo $row['password']; ?>">      
-                        </div>
-
-                        <div class="form-group">
-                          <label>Role</label>
-                          <input type="text" name="level" class="form-control" value="<?php echo $row['level']; ?>">      
-                        </div>
-
-                        <div class="form-group">
-                          <label>Status</label>
-                          <input type="text" name="status" class="form-control" value="<?php echo $row['status_user']; ?>">      
-                        </div>
-                        
-                        <div class="modal-footer">  
-                          <button type="submit" name="submit" class="btn btn-success">Simpan Perubahan Data</button>
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-                        </div>
-
-                        <?php 
-                        }
-                        ?>        
-                      </form>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          <?php               
-          } 
-          ?>
-        </tbody>
-
-              </table>
+<!-- disini -->
             </div>
             <!-- /.card-body -->
           </div>
