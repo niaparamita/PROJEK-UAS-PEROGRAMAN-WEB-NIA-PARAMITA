@@ -167,6 +167,11 @@
                 <td><?= htmlspecialchars($row['password']); ?></td>
                 <td><?= htmlspecialchars($row['nama_lengkap']); ?></td>
                 <td><?= htmlspecialchars($row['status']); ?></td>
+                <td>
+                  <a href="user_edit.php?id=<? $row['id'];?>" class="btn btn-warning btn-sm">Edit</a>
+                  <a href="user_delete.php?id=<? $row['id'];?>" class="btn btn-danger btn-sm">Delete</a>
+
+                </td>
                 <td></td>
               </tr>
               <?php } ?>
