@@ -7,7 +7,7 @@
 
 # Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard]([screenshots/dashboard.png](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/dd663b1e4527c7980e6885eeceae9bdf653e72ef/gambar_hasil/Screenshot%202026-06-30%20153533.png))
 
 # Data User
 
