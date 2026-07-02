@@ -19,7 +19,7 @@ kelas: IF C
 
 # Data Produk
 
-![Produk](screenshots/Screenshot 2026-06-30 154207.png)
+![Produk](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/222f6b57babf8a3415890c86610870d8a55d5a13/gambar_hasil/Screenshot%202026-06-30%20154207.png)
 
 ## Deskripsi
 Project UAS Mata Kuliah Pemrograman Web menggunakan PHP Native, MySQL, dan AdminLTE.
