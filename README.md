@@ -7,15 +7,15 @@ kelas: IF C
 
 # Tampilan Login
 
-![Login](screenshots/login.png)
+![Login](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/a4af0b4983dc5304f0b86b3c86ec9277034dfff7/gambar_hasil/image.png)
 
 # Dashboard
 
-![Dashboard](gambar_hasil/https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/tree/main/gambar_hasil)
+![Dashboard](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/8812e818395f026432c9e4c26407b232b5326e7a/gambar_hasil/Screenshot%202026-06-30%20153533.png)
 
 # Data User
 
-![User](gambar_hasil/Screenshot 2026-06-30 154143.png)
+![User](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/8812e818395f026432c9e4c26407b232b5326e7a/gambar_hasil/Screenshot%202026-06-30%20154143.png)
 
 # Data Produk
 
