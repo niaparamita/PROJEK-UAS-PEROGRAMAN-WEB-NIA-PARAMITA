@@ -11,7 +11,7 @@ kelas: IF C
 
 # Dashboard
 
-![Dashboard] (https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/a9c4d545eccead95d5b5f11f8bcce297e6435f1c/gambar_hasil/Screenshot%202026-06-30%20153533.png)
+![Dashboard](gambar_hasil/https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/tree/main/gambar_hasil)
 
 # Data User
 
@@ -19,7 +19,7 @@ kelas: IF C
 
 # Data Produk
 
-![Produk](screenshots/barang.png)
+![Produk](screenshots/Screenshot 2026-06-30 154207.png)
 
 ## Deskripsi
 Project UAS Mata Kuliah Pemrograman Web menggunakan PHP Native, MySQL, dan AdminLTE.
