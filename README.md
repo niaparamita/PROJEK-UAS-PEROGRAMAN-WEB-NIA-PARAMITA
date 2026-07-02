@@ -1,5 +1,7 @@
 # PROJEK UAS PEMROGRAMAN WEB
-
+nama : ni made nia paramita
+nim: 2501010376
+kelas: IF C
 
 # Tampilan Login
 
@@ -7,7 +9,7 @@
 
 # Dashboard
 
-![Dashboard]([screenshots/dashboard.png](https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/dd663b1e4527c7980e6885eeceae9bdf653e72ef/gambar_hasil/Screenshot%202026-06-30%20153533.png)
+![Dashboard] (https://github.com/niaparamita/PROJEK-UAS-PEROGRAMAN-WEB-NIA-PARAMITA/blob/a9c4d545eccead95d5b5f11f8bcce297e6435f1c/gambar_hasil/Screenshot%202026-06-30%20153533.png)
 
 # Data User
 
